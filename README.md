@@ -1,47 +1,83 @@
-🏅 Olympic Medal Analysis
-This project performs data analysis on Olympic Games athletes and medal distribution using the Athlete Events and NOC Regions datasets. It explores medal tallies across countries and over time using Python, pandas, seaborn, and plotly.
+# 🏅 Olympic Medal Analysis
 
-📁 Dataset Used
-athlete_events.csv: Contains data on athletes, their demographic details, sports, events, and medals.
+This project presents an in-depth analysis of athletes and medal distributions across different Olympic Games using the **Athlete Events** and **NOC Regions** datasets. The analysis focuses on medal tallies, trends over time, and participation diversity, utilizing powerful data handling and visualization tools in Python.
 
-noc_regions.csv: Maps National Olympic Committee (NOC) codes to regions.
+---
 
-📊 Key Steps and Analysis
-1. Data Loading and Cleaning
-Loaded both datasets using pandas.
+## 📁 Dataset Used
 
-Filtered data for Summer Olympics only.
+- **`athlete_events.csv`**  
+  Contains athlete-level data including demographics, sport, event, and medal information.
 
-Merged region information with athlete data using NOC codes.
+- **`noc_regions.csv`**  
+  Maps National Olympic Committee (NOC) codes to corresponding countries/regions.
 
-Removed duplicate entries.
+---
 
-2. Feature Engineering
-Created dummy variables for medals (Gold, Silver, Bronze).
+## 📊 Key Steps & Analysis
 
-Aggregated medal data using groupby operations for comprehensive analysis.
+### 1. 🔄 Data Loading & Cleaning
+- Loaded datasets using `pandas`.
+- Filtered for **Summer Olympics** only.
+- Merged region data with athlete information via NOC codes.
+- Removed duplicate entries for consistent analysis.
 
-3. Medal Tally Calculation
-Generated a sorted medal tally by country using groupby aggregation.
+### 2. ⚙️ Feature Engineering
+- Created binary indicators for medal types (Gold, Silver, Bronze).
+- Used `groupby` operations to aggregate medal data by country and year.
 
-Calculated the total medals won by each country.
+### 3. 🥇 Medal Tally Calculation
+- Computed sorted medal tallies by country using aggregation.
+- Calculated total medals per nation.
+- Defined a function `fetch_medal_tally(year, country)` to retrieve medal stats dynamically.
 
-Created a custom function fetch_medal_tally(year, country) to retrieve medal data for specific years and countries.
+### 4. 📈 Exploratory Data Analysis (EDA)
+- Explored diversity in:
+  - Countries (NOC codes)
+  - Sports and Events
+  - Age distributions of athletes
+- Analyzed growth in number of participating countries over Olympic editions.
 
-4. Exploratory Data Analysis (EDA)
-Used .unique().shape to explore diversity in:
+### 5. 📊 Data Visualization
+- Created interactive line charts using **Plotly Express** to visualize country participation over time.
+- Utilized **Seaborn** and **Matplotlib** for in-depth statistical plots and trends (e.g., athlete age distributions, sport-wise participation).
 
-Countries (NOC)
+---
 
-Sports
+## 🛠️ Tech Stack
 
-Events
+- Python 3
+- Pandas
+- Seaborn
+- Matplotlib
+- Plotly Express
+- Jupyter / Colab
 
-Athlete ages
+---
 
-Tracked the number of participating nations over time.
+## 📌 Outcomes
 
-5. Data Visualization
-Used Plotly Express to create an interactive line chart of countries participating per edition.
+- Built reusable functions for flexible medal queries.
+- Derived actionable insights on Olympic trends, athlete demographics, and national performances.
+- Visualized complex data using both static and interactive charts for better interpretation.
 
-Used Seaborn and Matplotlib for further visual exploration (code snippet incomplete).
+---
+
+## 🚀 Future Enhancements
+
+- Include analysis for Winter Olympics.
+- Add medal prediction models using machine learning.
+- Deploy interactive dashboard using Streamlit or Dash.
+
+---
+
+## 📄 License
+
+This project is open-sourced under the [MIT License](LICENSE).
+
+---
+
+## 👤 Author
+
+**Abhishek Singh**  
+GitHub: [@Abhishek603124](https://github.com/Abhishek603124)
