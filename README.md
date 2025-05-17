@@ -71,12 +71,6 @@ This project presents an in-depth analysis of athletes and medal distributions a
 
 ---
 
-## 📄 License
-
-This project is open-sourced under the [MIT License](LICENSE).
-
----
-
 ## 👤 Author
 
 **Abhishek Singh**  
